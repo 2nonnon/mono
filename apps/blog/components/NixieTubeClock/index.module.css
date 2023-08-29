@@ -1,0 +1,117 @@
+.nixie {
+    --nixie-bg: hsl(359, 50%, 90%);
+
+    position: relative;
+    background-color: var(--nixie-bg);
+    height: .5em;
+    width: 2em;
+    padding: 0 .25em;
+    box-sizing: content-box;
+    background-clip: content-box;
+}
+
+:root[theme='dark'] .nixie {
+    --nixie-bg: hsl(359, 50%, 10%);
+}
+
+.nixie--active.nixie--active.nixie--active {
+    --nixie-bg: hsl(359, 100%, 50%);
+    filter: drop-shadow(0 0 .5em hsl(359 100% 50% / 50%));
+}
+
+.nixie::before,
+.nixie::after {
+    content: '';
+    display: block;
+    width: .25em;
+    height: .5em;
+    border-top: .25em solid transparent;
+    border-bottom: .25em solid transparent;
+    position: absolute;
+    top: 0;
+}
+
+.nixie::before {
+    border-right: .25em solid var(--nixie-bg);
+    left: 0;
+}
+
+.nixie::after {
+    border-left: .25em solid var(--nixie-bg);
+    right: 0;
+}
+
+.nixie--a {
+    position: absolute;
+    top: .25em;
+    left: .25em;
+    transform-origin: 0 50%;
+    transform: rotate(90deg);
+}
+
+.nixie--b {
+    position: absolute;
+    top: 0em;
+    left: .25em;
+}
+
+.nixie--c {
+    position: absolute;
+    top: .25em;
+    right: .25em;
+    transform-origin: 100% 50%;
+    transform: rotate(-90deg);
+}
+
+.nixie--d {
+    position: absolute;
+    top: 3em;
+    left: .25em;
+}
+
+.nixie--e {
+    position: absolute;
+    top: 3.25em;
+    left: .25em;
+    transform-origin: 0 50%;
+    transform: rotate(90deg);
+}
+
+.nixie--f {
+    position: absolute;
+    top: 6em;
+    left: .25em;
+}
+
+.nixie--g {
+    position: absolute;
+    top: 3.25em;
+    right: .25em;
+    transform-origin: 100% 50%;
+    transform: rotate(-90deg);
+}
+
+.nixie-num {
+    position: relative;
+    width: 3em;
+    height: 6.5em;
+}
+
+.colon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.colon::before,
+.colon::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: .5em;
+    height: .5em;
+    background-color: hsl(359, 100%, 50%);
+    filter: drop-shadow(0 0 .5em hsl(359 100% 50% / 50%));
+}

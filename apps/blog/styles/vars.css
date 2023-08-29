@@ -1,0 +1,71 @@
+:root {
+    /* brand foundation */
+    --brand-hue: 200;
+    --brand-saturation: 100%;
+    --brand-lightness: 50%;
+
+    --sm: .25rem;
+    --md: .5rem;
+    --lg: 1rem;
+    --sm-n: -.25rem;
+    --md-n: -.5rem;
+    --lg-n: -1rem;
+
+    /* light */
+    --brand-light: hsl(var(--brand-hue) var(--brand-saturation) var(--brand-lightness));
+    --text1-light: hsl(var(--brand-hue) var(--brand-saturation) 10%);
+    --text2-light: hsl(var(--brand-hue) 30% 20%);
+    --surface0-light: hsl(var(--brand-hue) 25% 80%);
+    --surface1-light: hsl(var(--brand-hue) 25% 90%);
+    --surface2-light: hsl(var(--brand-hue) 20% 99%);
+    --surface3-light: hsl(var(--brand-hue) 20% 92%);
+    --surface4-light: hsl(var(--brand-hue) 20% 85%);
+
+    /* dark */
+    --brand-dark: hsl(var(--brand-hue) calc(var(--brand-saturation) / 2) calc(var(--brand-lightness) / 1.5));
+    --text1-dark: hsl(var(--brand-hue) 15% 85%);
+    --text2-dark: hsl(var(--brand-hue) 5% 65%);
+    --surface0-dark: hsl(var(--brand-hue) 10% 5%);
+    --surface1-dark: hsl(var(--brand-hue) 10% 10%);
+    --surface2-dark: hsl(var(--brand-hue) 10% 15%);
+    --surface3-dark: hsl(var(--brand-hue) 5% 20%);
+    --surface4-dark: hsl(var(--brand-hue) 5% 25%);
+
+    --border-color: hsl(var(--brand-hue) 10% 50% / 15%);
+
+    --surface-shadow-sm: var(--sm) var(--sm) var(--md) var(--surface0),
+        var(--sm-n) var(--sm-n) var(--md) var(--surface2);
+    --surface-shadow-inset-sm: inset var(--sm) var(--sm) var(--md) var(--surface0),
+        inset var(--sm-n) var(--sm-n) var(--md) var(--surface2);
+
+    --surface-shadow-md: var(--md) var(--md) var(--lg) var(--surface0),
+        var(--md-n) var(--md-n) var(--lg) var(--surface2);
+    --surface-shadow-inset-md: inset var(--md) var(--md) var(--lg) var(--surface0),
+        inset var(--md-n) var(--md-n) var(--lg) var(--surface2);
+}
+
+:root {
+    color-scheme: light;
+
+    --brand: var(--brand-light);
+    --text1: var(--text1-light);
+    --text2: var(--text2-light);
+    --surface0: var(--surface0-light);
+    --surface1: var(--surface1-light);
+    --surface2: var(--surface2-light);
+    --surface3: var(--surface3-light);
+    --surface4: var(--surface4-light);
+}
+
+:root[theme='dark'] {
+    color-scheme: dark;
+
+    --brand: var(--brand-dark);
+    --text1: var(--text1-dark);
+    --text2: var(--text2-dark);
+    --surface0: var(--surface0-dark);
+    --surface1: var(--surface1-dark);
+    --surface2: var(--surface2-dark);
+    --surface3: var(--surface3-dark);
+    --surface4: var(--surface4-dark);
+}
