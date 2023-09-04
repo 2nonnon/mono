@@ -28,6 +28,44 @@ export default async function Page({ params: { lang } }: PageProps) {
           />
           <h1 className='text-4xl font-extrabold my-0'>{name}</h1>
           <p className='text-center my-0'>{copies.introduce}</p>
+          {/* <div>
+          <svg width="500" height="500" viewBox='0 0 500 500'> */}
+            {/* <polygon points={`
+            ${-50 / Math.sqrt(3) + 250} ${50 + 250}, 
+            ${50 / Math.sqrt(3) + 250} ${50 + 250}, 
+            ${100 / Math.sqrt(3) + 250} ${0 + 250}, 
+            ${50 / Math.sqrt(3) + 250} ${-50 + 250}, 
+            ${-50 / Math.sqrt(3) + 250} ${-50 + 250},
+            ${-100 / Math.sqrt(3) + 250} ${0 + 250}`} fill="none" style={{ stroke: '#000' }} strokeWidth="2" />
+
+            <polygon points={`
+            ${0 + 250} ${400 / Math.sqrt(3) + 250}, 
+            ${200 + 250} ${200 / Math.sqrt(3) + 250},
+            ${200 + 250} ${-200 / Math.sqrt(3) + 250}, 
+            ${0 + 250} ${-400 / Math.sqrt(3) + 250}, 
+            ${-200 + 250} ${-200 / Math.sqrt(3) + 250}, 
+            ${-200 + 250} ${200 / Math.sqrt(3) + 250}`} fill="none" style={{ stroke: '#000' }} strokeWidth="2" /> */}
+
+            {/* <polygon points={`
+            ${-50 / Math.sqrt(3) + 250} ${50 + 250}, 
+            ${0 + 250} ${400 / Math.sqrt(3) + 250}, 
+
+            ${50 / Math.sqrt(3) + 250} ${50 + 250}, 
+            ${200 + 250} ${200 / Math.sqrt(3) + 250},
+
+            ${100 / Math.sqrt(3) + 250} ${0 + 250}, 
+            ${200 + 250} ${-200 / Math.sqrt(3) + 250}, 
+
+            ${50 / Math.sqrt(3) + 250} ${-50 + 250}, 
+            ${0 + 250} ${-400 / Math.sqrt(3) + 250}, 
+
+            ${-50 / Math.sqrt(3) + 250} ${-50 + 250},
+            ${-200 + 250} ${-200 / Math.sqrt(3) + 250},
+
+            ${-100 / Math.sqrt(3) + 250} ${0 + 250}
+            ${-200 + 250} ${200 / Math.sqrt(3) + 250}`} fill="none" style={{ stroke: '#000' }} strokeWidth="2" />
+          </svg>
+          </div> */}
         </div>
       </section>
     </>
