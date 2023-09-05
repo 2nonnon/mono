@@ -1,9 +1,7 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
-const sharedConfig = require("tailwind-config/tailwind.config.js");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  presets: [sharedConfig],
   content: [
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx}',

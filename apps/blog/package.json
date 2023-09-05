@@ -22,7 +22,6 @@
     "remark-gfm": "^3.0.1",
     "remark-parse": "^10.0.1",
     "remark-rehype": "^10.1.0",
-    "ui": "workspace:*",
     "unified": "^10.1.2"
   },
   "devDependencies": {
@@ -34,13 +33,12 @@
     "@types/react": "^18.0.25",
     "@types/wicg-file-system-access": "^2020.9.6",
     "autoprefixer": "^10.4.13",
-    "eslint-config-custom": "workspace:*",
+    "eslint": "^8.48.0",
+    "eslint-config-next": "^13.4.19",
     "postcss": "^8.4.19",
     "postcss-import": "^15.1.0",
     "postcss-nesting": "^11.2.2",
-    "tailwind-config": "workspace:*",
     "tailwindcss": "^3.2.4",
-    "tsconfig": "workspace:*",
     "typescript": "^4.9.3"
   }
 }
