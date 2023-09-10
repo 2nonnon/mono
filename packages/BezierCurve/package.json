@@ -1,7 +1,19 @@
 {
     "name": "bezier-curve",
     "version": "0.0.0",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": "./dist"
+    },
     "license": "MIT",
-    "scripts": {},
-    "devDependencies": {}
+    "scripts": {
+        "build": "tsup",
+        "lint": "eslint src/",
+        "dev": "tsup --watch",
+        "check-types": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "tsup": "^7.2.0",
+        "typescript": "^4.9.3"
+    }
 }
