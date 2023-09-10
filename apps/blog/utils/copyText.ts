@@ -1,5 +1,5 @@
-const copyText = (text: string) =>
-  new Promise<void>((resolve, reject) => {
+function copyText(text: string) {
+  return new Promise<void>((resolve, reject) => {
     if (navigator.clipboard) {
       navigator.clipboard
         .writeText(text)
@@ -11,5 +11,6 @@ const copyText = (text: string) =>
         })
     }
   })
+}
 
 export default copyText

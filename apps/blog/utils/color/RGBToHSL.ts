@@ -1,4 +1,4 @@
-export const RGBToHSL = (R: number, G: number, B: number) => {
+export function RGBToHSL(R: number, G: number, B: number) {
   const _R = R / 255
   const _G = G / 255
   const _B = B / 255

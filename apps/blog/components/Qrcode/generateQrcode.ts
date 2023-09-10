@@ -28,12 +28,12 @@ export type MarkerStyleType = keyof typeof MarkerStyleMap
 
 export type QrcodeProps = QrcodeOptions & DrawOptions
 
-const drawRectCell = ({ x, y, color, size, ctx }: { x: number; y: number; color: string; size: number; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D }) => {
+function drawRectCell({ x, y, color, size, ctx }: { x: number; y: number; color: string; size: number; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D }) {
   ctx.fillStyle = color
   ctx.fillRect(x, y, size, size)
 }
 
-const drawDotCell = ({ x, y, color, radius, ctx }: { x: number; y: number; color: string; radius: number; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D }) => {
+function drawDotCell({ x, y, color, radius, ctx }: { x: number; y: number; color: string; radius: number; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D }) {
   ctx.fillStyle = color
   ctx.strokeStyle = color
 
@@ -43,7 +43,7 @@ const drawDotCell = ({ x, y, color, radius, ctx }: { x: number; y: number; color
   ctx.fill()
 }
 
-const drawRoundedCell = ({ x, y, size, isDark, lightColor, darkColor, ctx, cornerIsRounded: { LT, RT, LB, RB } }: { x: number; y: number; size: number; isDark: boolean; lightColor: string; darkColor: string; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D; cornerIsRounded: { LT: Boolean; RT: Boolean; LB: Boolean; RB: Boolean } }) => {
+function drawRoundedCell({ x, y, size, isDark, lightColor, darkColor, ctx, cornerIsRounded: { LT, RT, LB, RB } }: { x: number; y: number; size: number; isDark: boolean; lightColor: string; darkColor: string; ctx: CanvasRenderingContext2D | OffscreenCanvasRenderingContext2D; cornerIsRounded: { LT: boolean; RT: boolean; LB: boolean; RB: boolean } }) {
   const halfSize = size / 2
 
   const lineWidth = 1
@@ -74,7 +74,7 @@ const drawRoundedCell = ({ x, y, size, isDark, lightColor, darkColor, ctx, corne
   }
 }
 
-export const generateQrcode = async (target: HTMLCanvasElement, options: QrcodeProps) => {
+export async function generateQrcode(target: HTMLCanvasElement, options: QrcodeProps) {
   // console.log(options)
 
   const qr = useQrcode(options)
@@ -289,7 +289,7 @@ export const generateQrcode = async (target: HTMLCanvasElement, options: QrcodeP
 
     targetCtx.strokeStyle = lightColor
     targetCtx.fillStyle = lightColor
-    targetCtx.roundRect(width / 2 - size / 2, width / 2 - size / 2, size, size, size / 10)
+    ;(targetCtx as any).roundRect(width / 2 - size / 2, width / 2 - size / 2, size, size, size / 10)
     targetCtx.fill()
 
     image.onload = () => {

@@ -1,7 +1,7 @@
 import type { Coordinate, MineSweeperType } from './type'
 import { BlockType } from './type'
 
-export const generateMine = ([row, col]: [number, number], num: number, start: Coordinate) => {
+export function generateMine([row, col]: [number, number], num: number, start: Coordinate) {
   if (row <= 3 || col <= 3 || num <= 0)
     return []
 
@@ -42,7 +42,7 @@ export const generateMine = ([row, col]: [number, number], num: number, start: C
   })
 }
 
-export const initMineSweeper = (mineSweeper: MineSweeperType, mines: Coordinate[]) => {
+export function initMineSweeper(mineSweeper: MineSweeperType, mines: Coordinate[]) {
   const res = mineSweeper.map(mineRow => mineRow.map(mine => ({ ...mine })))
   mines.forEach(([y, x]) => {
     if (!res[y]?.[x])
@@ -59,7 +59,7 @@ export const initMineSweeper = (mineSweeper: MineSweeperType, mines: Coordinate[
   return res
 }
 
-export const handleClickMine = (mineSweeper: MineSweeperType, [y, x]: Coordinate) => {
+export function handleClickMine(mineSweeper: MineSweeperType, [y, x]: Coordinate) {
   if (!mineSweeper[y][x] || mineSweeper[y][x].type !== BlockType.MINE)
     return mineSweeper
   const res = mineSweeper.map(mineRow => mineRow.map(mine => ({ ...mine })))
@@ -68,7 +68,7 @@ export const handleClickMine = (mineSweeper: MineSweeperType, [y, x]: Coordinate
   return res
 }
 
-export const handleClickBlock = (mineSweeper: MineSweeperType, [y, x]: Coordinate) => {
+export function handleClickBlock(mineSweeper: MineSweeperType, [y, x]: Coordinate) {
   if (!mineSweeper[y][x] || mineSweeper[y][x].type !== BlockType.BLOCK)
     return mineSweeper
   const res = mineSweeper.map(mineRow => mineRow.map(mine => ({ ...mine })))
@@ -105,14 +105,14 @@ export const handleClickBlock = (mineSweeper: MineSweeperType, [y, x]: Coordinat
   return res
 }
 
-export const handleToggleFlag = (mineSweeper: MineSweeperType, [y, x]: Coordinate) => {
+export function handleToggleFlag(mineSweeper: MineSweeperType, [y, x]: Coordinate) {
   const res = mineSweeper.map(mineRow => mineRow.map(mine => ({ ...mine })))
   res[y][x].flag = !res[y][x].flag
 
   return res
 }
 
-export const checkWin = (mineSweeper: MineSweeperType) => {
+export function checkWin(mineSweeper: MineSweeperType) {
   return mineSweeper.every(row => row.every((mine) => {
     if (mine.type === BlockType.MINE)
       return mine.flag

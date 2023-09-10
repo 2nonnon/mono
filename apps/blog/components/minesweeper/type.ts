@@ -30,4 +30,4 @@ export type MineRow = IBlock[]
 
 export type MineSweeperType = MineRow[]
 
-export type Coordinate = [y:number, x:number]
+export type Coordinate = [y: number, x: number]

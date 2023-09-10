@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react'
 
-const Position = () => {
+function Position() {
   const [position, setPosition] = useState<GeolocationPosition | null>(null)
 
   const coords = position?.coords
@@ -47,7 +47,7 @@ const Position = () => {
   )
 }
 
-const Main = () => {
+function Main() {
   return (
     <>
       <Position></Position>

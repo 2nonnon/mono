@@ -5,7 +5,7 @@ interface CompressOptions {
   width?: number
 }
 
-export const imageCompress = async (source: File, { quality = 0.25, width }: CompressOptions) => {
+export async function imageCompress(source: File, { quality = 0.25, width }: CompressOptions) {
   if (source.type !== 'image/png' && source.type !== 'image/jpeg' && source.type !== 'image/webp')
     throw new Error('TypeError: file type should be \'image/png\' | \'image/jpeg\' | \'image/webp\'.')
 

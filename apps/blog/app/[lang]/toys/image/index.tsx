@@ -15,7 +15,7 @@ interface NUploadProps {
   accept?: string
 }
 
-const NUpload = ({ onUpload, children, accept }: NUploadProps) => {
+function NUpload({ onUpload, children, accept }: NUploadProps) {
   return (<>
     <section className='flex select-none surface-sm rounded-md w-fit'>
       <label className='flex items-center py-2 px-4 gap-2 cursor-pointer'>
@@ -36,7 +36,7 @@ interface NCompareProps {
   bottomSrc: string
 }
 
-const NCompare = ({ topSrc, bottomSrc }: NCompareProps) => {
+function NCompare({ topSrc, bottomSrc }: NCompareProps) {
   const [range, setRange] = useState(0)
   const imgRef = useRef<HTMLImageElement>(null)
   const rangeRef = useRef<HTMLInputElement>(null)
@@ -64,7 +64,7 @@ const NCompare = ({ topSrc, bottomSrc }: NCompareProps) => {
   </>)
 }
 
-const getImageInfo = async (file: File) => {
+async function getImageInfo(file: File) {
   const src = URL.createObjectURL(file)
   const img = new Image()
   img.src = src
@@ -88,8 +88,8 @@ interface ImageInfo {
   src: string
 }
 
-const ImagePage = ({ dictionary }: {
-  dictionary: Dictionary }) => {
+function ImagePage({ dictionary }: {
+  dictionary: Dictionary }) {
   const copies = dictionary.image
   // const [show, setShow] = useState(false)
   const [origin, setOrigin] = useState<File | null>(null)

@@ -10,17 +10,17 @@ interface Branch {
   theta: number
 }
 
-const grow = (ctx: CanvasRenderingContext2D, option = {
+function grow(ctx: CanvasRenderingContext2D, option = {
   start: { x: 0, y: 0 },
   length: 10,
   theta: Math.PI / 4,
-}) => {
+}) {
   function init() {
     ctx.strokeStyle = '#fff5'
     step(option)
   }
 
-  let pendingTasks: Function[] = []
+  let pendingTasks: Array<() => void> = []
 
   function step(b: Branch, depth = 0) {
     const end = getEndPoint(b)
@@ -42,7 +42,7 @@ const grow = (ctx: CanvasRenderingContext2D, option = {
   }
 
   function frame() {
-    const tasks: Function[] = []
+    const tasks: Array<() => void> = []
     pendingTasks = pendingTasks.filter((i) => {
       if (Math.random() > 0.4) {
         tasks.push(i)
@@ -87,7 +87,7 @@ const grow = (ctx: CanvasRenderingContext2D, option = {
   init()
 }
 
-const PlumBG = () => {
+function PlumBG() {
   const canvas = useRef<HTMLCanvasElement>(null)
 
   useEffect(() => {

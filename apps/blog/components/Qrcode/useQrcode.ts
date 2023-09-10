@@ -29,7 +29,7 @@ export interface QrcodeOptions {
   multibyte: MultibyteType
 }
 
-export const useQrcode = (options: QrcodeOptions) => {
+export function useQrcode(options: QrcodeOptions) {
   qrcode.stringToBytes = qrcode.stringToBytesFuncs[options.multibyte]
 
   const qr = qrcode(options.typeNumber, options.errorCorrectionLevel)

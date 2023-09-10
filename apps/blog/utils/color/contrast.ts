@@ -1,6 +1,6 @@
 import { HexToRGB } from './HexToRGB'
 
-export const splitHexString = (hex: string) => {
+export function splitHexString(hex: string) {
   const length = hex.length
 
   let step = 1
@@ -18,18 +18,18 @@ export const splitHexString = (hex: string) => {
   return { R, G, B }
 }
 
-const getPassValue = (pass: number) => {
+function getPassValue(pass: number) {
   if (pass <= 0.04045)
     return pass / 12.92
   else
     return ((pass + 0.055) / 1.055) ** 2.4
 }
 
-const getRelativeLuminance = (R: number, G: number, B: number) => {
+function getRelativeLuminance(R: number, G: number, B: number) {
   return 0.2126 * getPassValue(R) + 0.7152 * getPassValue(G) + 0.0722 * getPassValue(B)
 }
 
-export const getContrast = (color1: string, color2: string) => {
+export function getContrast(color1: string, color2: string) {
   if (!color1.startsWith('#') || !color2.startsWith('#'))
     return
 
@@ -45,4 +45,3 @@ export const getContrast = (color1: string, color2: string) => {
 
   return ((L1 + 0.05) / (L2 + 0.05)).toFixed(2)
 }
-

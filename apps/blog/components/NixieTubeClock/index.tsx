@@ -6,7 +6,7 @@ interface NixieTubeProps {
   position?: 'a' | 'b' | 'c' | 'd' | 'e' | 'f' | 'g'
 }
 
-const NixieTube = ({ active, position }: NixieTubeProps) => {
+function NixieTube({ active, position }: NixieTubeProps) {
   return <div className={`${style.nixie} ${position ? style[`nixie--${position}`] : ''} ${active ? style['nixie--active'] : ''}`}></div>
 }
 
@@ -27,7 +27,7 @@ const positions = ['a', 'b', 'c', 'd', 'e', 'f', 'g'] as const
 
 interface NixieTubeNumProps { num?: keyof typeof numMap }
 
-const NixieTubeNum = ({ num }: NixieTubeNumProps) => {
+function NixieTubeNum({ num }: NixieTubeNumProps) {
   return <>
     <div className={style['nixie-num']}>
       {numMap[num!].map((v: 0 | 1, i: number) => {
@@ -37,7 +37,7 @@ const NixieTubeNum = ({ num }: NixieTubeNumProps) => {
   </>
 }
 
-const Colon = () => {
+function Colon() {
   return <div className={style.colon}></div>
 }
 
@@ -59,4 +59,3 @@ export default function NixieTubeClock({ current }: NixieTubeClockProps) {
     </div>
   </>)
 }
-

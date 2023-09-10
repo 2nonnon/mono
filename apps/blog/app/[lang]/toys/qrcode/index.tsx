@@ -68,7 +68,7 @@ interface PanelParams {
   setModal: React.Dispatch<React.SetStateAction<boolean>>
 }
 
-const Panel = ({ formData, setFormData, generateQRCode, setModal }: PanelParams) => {
+function Panel({ formData, setFormData, generateQRCode, setModal }: PanelParams) {
   const updateFormData = (data: Partial<Fields>) => {
     setFormData(Object.assign({}, formData, data))
   }
@@ -143,8 +143,8 @@ const Panel = ({ formData, setFormData, generateQRCode, setModal }: PanelParams)
   )
 }
 
-const QrcodeGenerator = ({ dictionary }: {
-  dictionary: Dictionary }) => {
+function QrcodeGenerator({ dictionary }: {
+  dictionary: Dictionary }) {
   const target = useRef<HTMLCanvasElement>(null)
   const [formData, setFormData] = useState<Fields>({
     typeNumber: 0,

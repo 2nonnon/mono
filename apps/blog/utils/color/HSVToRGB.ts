@@ -1,4 +1,4 @@
-export const HSVToRGB = (H: number, S: number, V: number) => {
+export function HSVToRGB(H: number, S: number, V: number) {
   const C = V * S
   const X = C * (1 - Math.abs((H / 60) % 2 - 1))
   const m = V - C

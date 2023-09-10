@@ -4,7 +4,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 
 const pannerOptions = { pan: 0 }
 
-const Audio = () => {
+function Audio() {
   const [src, setSrc] = useState('https://s3-us-west-2.amazonaws.com/s.cdpn.io/858/outfoxing.mp3')
   const [playing, setPlaying] = useState(false)
 

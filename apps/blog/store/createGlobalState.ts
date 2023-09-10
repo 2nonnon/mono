@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-function createGlobalState<T extends object = {}>(initialState: T) {
+function createGlobalState<T extends object = object>(initialState: T) {
   const state: T = initialState
   const subscribers = {} as { [K in keyof T]: any[] }
 

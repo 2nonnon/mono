@@ -108,7 +108,7 @@ interface FlakeState extends Point {
   size: number
 }
 
-const grow = (ctx: CanvasRenderingContext2D, width: number, height: number, snowflakeProps: SnowflakeProps) => {
+function grow(ctx: CanvasRenderingContext2D, width: number, height: number, snowflakeProps: SnowflakeProps) {
   const PI = Math.PI
   const per = Math.PI / 270
   const snowflake = new Snowflake(snowflakeProps).init()
@@ -178,7 +178,7 @@ interface SnowBGProps {
   theme: Theme
 }
 
-const SnowBG = ({ theme }: SnowBGProps) => {
+function SnowBG({ theme }: SnowBGProps) {
   const canvas = useRef<HTMLCanvasElement>(null)
   const { width, height } = useClientSize()
 

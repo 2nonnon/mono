@@ -18,7 +18,7 @@ interface ColorInputProps {
   handleChange: (key: keyof ColorInputProps['value']) => ChangeEventHandler<HTMLInputElement>
 }
 
-const ColorInput = ({ range, value, handleChange }: ColorInputProps) => {
+function ColorInput({ range, value, handleChange }: ColorInputProps) {
   return (<>
     <form className='flex flex-col gap-2'>
       {Object.keys(range).map((key) => {
@@ -79,7 +79,7 @@ const hsvRange = {
   },
 }
 
-const Contrast = () => {
+function Contrast() {
   const [hex1, setHex1] = useState({ R: '00', G: '00', B: '00' })
   const [hex2, setHex2] = useState({ R: '00', G: '00', B: '00' })
   const [contrast, setContrast] = useState('1')
@@ -132,7 +132,7 @@ const Contrast = () => {
   </>)
 }
 
-const Color = () => {
+function Color() {
   const [rgb, setRGB] = useState({ R: 0, G: 0, B: 0 })
 
   const hsl = RGBToHSL(rgb.R, rgb.G, rgb.B)
@@ -205,4 +205,3 @@ const Color = () => {
 }
 
 export default Color
-

@@ -14,7 +14,7 @@ interface mineSweeperOption {
   state: GameState
 }
 
-const useMineSweeper = ({ level, state }: mineSweeperOption) => {
+function useMineSweeper({ level, state }: mineSweeperOption) {
   const [gameLevel, setGameLevel] = useState(level)
   const [row, col] = gameLevel.size
   const init = Array.from({ length: row }).map(_ => Array.from({ length: col }).map(_ => ({ ...block })))

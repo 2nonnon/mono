@@ -1,4 +1,4 @@
-export const HSLToRGB = (H: number, S: number, L: number) => {
+export function HSLToRGB(H: number, S: number, L: number) {
   const C = (1 - Math.abs(2 * L - 1)) * S
   const X = C * (1 - Math.abs((H / 60) % 2 - 1))
   const m = L - C / 2

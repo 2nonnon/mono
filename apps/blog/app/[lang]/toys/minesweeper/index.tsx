@@ -18,7 +18,7 @@ interface BlockParam {
   onEnd: (...args: any[]) => any
 }
 
-const Block = ({ block, coordinate, onStart, onEnd }: BlockParam) => {
+function Block({ block, coordinate, onStart, onEnd }: BlockParam) {
   const { mineSweeper, setMineSweeper, gameState, setGameState, flagCount, setFlagCount, gameLevel } = useContext(MineSweeperContext)!
 
   const handleClick: React.MouseEventHandler<HTMLDivElement> = () => {
@@ -80,8 +80,8 @@ const Block = ({ block, coordinate, onStart, onEnd }: BlockParam) => {
   )
 }
 
-const MineSweeper = ({ dictionary }: {
-  dictionary: Dictionary }) => {
+function MineSweeper({ dictionary }: {
+  dictionary: Dictionary }) {
   const mineSweeperInfo = useMineSweeper({ level: Level.easy, state: GameState.PRE })
   const copies = dictionary.minesweeper
   const { current, start, reset, pause } = useStopWatch()
@@ -132,4 +132,3 @@ const MineSweeper = ({ dictionary }: {
 }
 
 export default MineSweeper
-

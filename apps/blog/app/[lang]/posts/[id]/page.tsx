@@ -58,7 +58,7 @@ export default async function Page({ params: { lang, id } }: PageProps) {
   )
 }
 
-export const generateStaticParams = async () => {
+export async function generateStaticParams() {
   const defaultPaths = getAllPostIds()
 
   return defaultPaths.map(path => path.params)
