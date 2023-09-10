@@ -7,7 +7,9 @@
     "clean": "turbo clean"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^0.40.3",
     "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.48.0",
     "turbo": "latest"
   },
   "config": {
