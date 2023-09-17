@@ -1,0 +1,16 @@
+.slider {
+    position: absolute;
+    inset-inline: -2px;
+    top: 50%;
+    transform: translateY(-50%);
+    appearance: none;
+    background-color: transparent;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    background-color: var(--surface2);
+    height: var(--height);
+    width: 2px;
+    cursor: ew-resize;
+}

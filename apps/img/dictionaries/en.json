@@ -1,0 +1,91 @@
+{
+    "layout": {
+        "loading": "Loading",
+        "blog": "Blog",
+        "logo": "Home",
+        "dark": "Dark",
+        "light": "Light",
+        "lang": "English",
+        "toy": "Toy",
+        "globalNav": "Global Navigation",
+        "toTop": "To Top"
+    },
+    "home": {
+        "title": "2nonnon's site",
+        "description": "2nonnon's site, share some technical blogs and some tools, games.",
+        "introduce": "This guy is mysterious and writes nothing."
+    },
+    "500": {
+        "title": "500 - Server-side error occurred",
+        "greeting": "Nice to meet you!"
+    },
+    "404": {
+        "title": "404 - Page Not Found",
+        "greeting": "Nice to meet you!"
+    },
+    "posts": {
+        "title": "Blog List",
+        "description": "Technical blogs related to front-end and react.",
+        "pageTitle": "Blog"
+    },
+    "post": {
+        "date": "Created: ",
+        "update": "Updated: ",
+        "author": "Author: ",
+        "translator": "Translator: "
+    },
+    "toy": {
+        "title": "Toy List",
+        "description": "Some tools and games, including QR code generation, minesweeper, color value conversion, and image compression.",
+        "pageTitle": "Toy",
+        "qrcode": "QRCode Generate",
+        "mine": "MineSweeper",
+        "color": "Color Converter",
+        "image": "Image Compressor",
+        "todo": "Todo",
+        "audio": "Audio Player"
+    },
+    "audio": {
+        "title": "Audio Player",
+        "description": "A simple audio player."
+    },
+    "todo": {
+        "title": "Todo List",
+        "description": "A simple list of things to do."
+    },
+    "qrcode": {
+        "title": "Qrcode Generator",
+        "description": "QR code generation tool that provides multiple configuration parameters and error correction levels."
+    },
+    "minesweeper": {
+        "title": "MineSweeper",
+        "description": "Minesweeper game with three levels: beginner, intermediate and expert.",
+        "refresh": "Refresh",
+        "beginner": "Beginner",
+        "intermediate": "Intermediate",
+        "expert": "Expert",
+        "win": "You win!",
+        "fail": "You lost!"
+    },
+    "image": {
+        "title": "Image Compressor",
+        "description": "Image compression tool that compresses images by modifying their quality or size, and provides a comparison function between before and after compression.",
+        "upload": "Click to upload Image",
+        "imgName": "Image Name: ",
+        "originSize": "Origin Size: ",
+        "originWidth": "Origin Width: ",
+        "originHeight": "Origin Height: ",
+        "transSize": "Trans Size: ",
+        "transWidth": "Trans Width: ",
+        "transHeight": "Trans Height: ",
+        "quality": "Quality:",
+        "width": "Width:",
+        "trans": "Transform",
+        "download": "Download",
+        "clear": "Clear"
+    },
+    "color": {
+        "title": "Color Converter",
+        "description": "Color value conversion tool, providing RGB, HSL, HSV conversion as well as RGB hexadecimal and decimal conversion functions, and color contrast calculation function."
+    }
+}

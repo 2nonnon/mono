@@ -1,0 +1,35 @@
+@layer components {
+    .surface-sm {
+        background-color: var(--surface1);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--surface-shadow-sm);
+    }
+
+    .surface-sm__inert {
+        background-color: var(--surface1);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--surface-shadow-sm);
+    }
+
+    .surface-sm:active,
+    .surface-sm__active {
+        box-shadow: var(--surface-shadow-inset-sm);
+    }
+
+    .surface-md {
+        background-color: var(--surface1);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--surface-shadow-md);
+    }
+
+    .surface-md__inert {
+        background-color: var(--surface1);
+        border: 1px solid var(--border-color);
+        box-shadow: var(--surface-shadow-md);
+    }
+
+    .surface-md:active,
+    .surface-md__active {
+        box-shadow: var(--surface-shadow-inset-md);
+    }
+}

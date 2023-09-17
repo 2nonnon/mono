@@ -1,0 +1,91 @@
+{
+    "layout": {
+        "loading": "加载中",
+        "blog": "文章",
+        "logo": "首页",
+        "dark": "夜间",
+        "light": "日间",
+        "lang": "简体中文",
+        "toy": "玩具",
+        "globalNav": "全局导航",
+        "toTop": "回到顶部"
+    },
+    "home": {
+        "title": "2nonnon 的个人站",
+        "description": "2nonnon 的个人站，分享一些技术博客和一些小工具、小游戏。",
+        "introduce": "这个人很神秘，他什么都没有写。"
+    },
+    "500": {
+        "title": "500 - 服务器开小差了",
+        "greeting": "很高兴见到你!"
+    },
+    "404": {
+        "title": "404 - 页面失踪了",
+        "greeting": "很高兴见到你!"
+    },
+    "posts": {
+        "title": "文章列表",
+        "description": "与前端、react相关的技术博客。",
+        "pageTitle": "文章"
+    },
+    "post": {
+        "date": "创建时间：",
+        "update": "更新时间：",
+        "author": "作者：",
+        "translator": "译者："
+    },
+    "toy": {
+        "title": "玩具列表",
+        "description": "一些小工具、小游戏，二维码生成、扫雷、色值转换、图片压缩。",
+        "pageTitle": "玩具",
+        "qrcode": "二维码生成",
+        "mine": "扫雷",
+        "color": "色值转换",
+        "image": "图片压缩",
+        "todo": "待办",
+        "audio": "音频播放器"
+    },
+    "audio": {
+        "title": "音频播放器",
+        "description": "一个简单的音频播放器。"
+    },
+    "todo": {
+        "title": "待办列表",
+        "description": "一个简单的待办应用。"
+    },
+    "qrcode": {
+        "title": "二维码生成",
+        "description": "二维码生成工具，提供多种配置参数和纠错等级。"
+    },
+    "minesweeper": {
+        "title": "扫雷",
+        "description": "扫雷小游戏，有初级、中级、高级三个等级。",
+        "refresh": "刷新",
+        "beginner": "初级",
+        "intermediate": "中级",
+        "expert": "高级",
+        "win": "你赢了!",
+        "fail": "你输了!"
+    },
+    "image": {
+        "title": "图片压缩",
+        "description": "图片压缩工具，通过修改图片质量或尺寸来压缩图片，并提供压缩前后图片的对比功能。",
+        "upload": "点击上传图片",
+        "imgName": "图片名称: ",
+        "originSize": "原始大小: ",
+        "originWidth": "原始宽度: ",
+        "originHeight": "原始高度: ",
+        "transSize": "转换后大小: ",
+        "transWidth": "转换后宽度: ",
+        "transHeight": "转换后高度: ",
+        "quality": "质量:",
+        "width": "宽度:",
+        "trans": "转换",
+        "download": "下载",
+        "clear": "清除"
+    },
+    "color": {
+        "title": "色值转换",
+        "description": "色值转换工具，提供 RGB、HSL、HSV 互相转换及RGB 十六进制和十进制互相转换功能，还有颜色对比度计算功能。"
+    }
+}

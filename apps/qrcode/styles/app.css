@@ -1,0 +1,27 @@
+:root {
+    @apply text-[14px] xs:text-[calc(12px+0.46vw)] xl:text-[18px];
+}
+
+html {
+    @apply bg-[var(--surface1)] scroll-smooth;
+}
+
+::-webkit-scrollbar {
+    @apply w-2 h-4;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent rounded-full;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-[var(--surface4)] rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-[var(--surface3)];
+}
+
+::selection {
+    @apply bg-[var(--brand)] text-[var(--text1)];
+}
