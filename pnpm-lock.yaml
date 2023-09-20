@@ -212,42 +212,18 @@ importers:
       '@formatjs/intl-localematcher':
         specifier: ^0.4.0
         version: registry.npmmirror.com/@formatjs/intl-localematcher@0.4.0
-      date-fns:
-        specifier: ^2.29.3
-        version: registry.npmmirror.com/date-fns@2.29.3
-      gray-matter:
-        specifier: ^4.0.3
-        version: registry.npmmirror.com/gray-matter@4.0.3
       negotiator:
         specifier: ^0.6.3
         version: registry.npmmirror.com/negotiator@0.6.3
       next:
         specifier: ^13.4.5
         version: registry.npmmirror.com/next@13.4.5(react-dom@18.2.0)(react@18.2.0)
-      qrcode-generator:
-        specifier: ^1.4.4
-        version: registry.npmmirror.com/qrcode-generator@1.4.4
       react:
         specifier: 18.2.0
         version: registry.npmmirror.com/react@18.2.0
       react-dom:
         specifier: 18.2.0
         version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
-      rehype-highlight:
-        specifier: ^6.0.0
-        version: registry.npmmirror.com/rehype-highlight@6.0.0
-      rehype-stringify:
-        specifier: ^9.0.3
-        version: registry.npmmirror.com/rehype-stringify@9.0.3
-      remark-gfm:
-        specifier: ^3.0.1
-        version: registry.npmmirror.com/remark-gfm@3.0.1
-      remark-parse:
-        specifier: ^10.0.1
-        version: registry.npmmirror.com/remark-parse@10.0.1
-      remark-rehype:
-        specifier: ^10.1.0
-        version: registry.npmmirror.com/remark-rehype@10.1.0
       unified:
         specifier: ^10.1.2
         version: registry.npmmirror.com/unified@10.1.2
@@ -261,15 +237,9 @@ importers:
       '@types/node':
         specifier: ^18.11.9
         version: registry.npmmirror.com/@types/node@18.11.17
-      '@types/offscreencanvas':
-        specifier: ^2019.7.0
-        version: registry.npmmirror.com/@types/offscreencanvas@2019.7.0
       '@types/react':
         specifier: ^18.0.25
         version: registry.npmmirror.com/@types/react@18.0.25
-      '@types/wicg-file-system-access':
-        specifier: ^2020.9.6
-        version: registry.npmmirror.com/@types/wicg-file-system-access@2020.9.6
       autoprefixer:
         specifier: ^10.4.13
         version: registry.npmmirror.com/autoprefixer@10.4.13(postcss@8.4.20)
@@ -294,12 +264,6 @@ importers:
       '@formatjs/intl-localematcher':
         specifier: ^0.4.0
         version: registry.npmmirror.com/@formatjs/intl-localematcher@0.4.0
-      date-fns:
-        specifier: ^2.29.3
-        version: registry.npmmirror.com/date-fns@2.29.3
-      gray-matter:
-        specifier: ^4.0.3
-        version: registry.npmmirror.com/gray-matter@4.0.3
       negotiator:
         specifier: ^0.6.3
         version: registry.npmmirror.com/negotiator@0.6.3
@@ -315,21 +279,6 @@ importers:
       react-dom:
         specifier: 18.2.0
         version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
-      rehype-highlight:
-        specifier: ^6.0.0
-        version: registry.npmmirror.com/rehype-highlight@6.0.0
-      rehype-stringify:
-        specifier: ^9.0.3
-        version: registry.npmmirror.com/rehype-stringify@9.0.3
-      remark-gfm:
-        specifier: ^3.0.1
-        version: registry.npmmirror.com/remark-gfm@3.0.1
-      remark-parse:
-        specifier: ^10.0.1
-        version: registry.npmmirror.com/remark-parse@10.0.1
-      remark-rehype:
-        specifier: ^10.1.0
-        version: registry.npmmirror.com/remark-rehype@10.1.0
       unified:
         specifier: ^10.1.2
         version: registry.npmmirror.com/unified@10.1.2
@@ -343,9 +292,6 @@ importers:
       '@types/node':
         specifier: ^18.11.9
         version: registry.npmmirror.com/@types/node@18.11.17
-      '@types/offscreencanvas':
-        specifier: ^2019.7.0
-        version: registry.npmmirror.com/@types/offscreencanvas@2019.7.0
       '@types/react':
         specifier: ^18.0.25
         version: registry.npmmirror.com/@types/react@18.0.25
